@@ -4,7 +4,7 @@ This is a short analysis of a transcript of the presidential debate between Kama
 
 The analysis includes, for both candidates and both moderators:
 
-- The total number of words said
+- The total number of words and syllables said
 - The 20 most used words, excluding some uninteresting words
 - The 20 most used words, excluding some uninteresting words and pronouns
   - Note that singular first-person pronouns are already part of the "uninteresting words"

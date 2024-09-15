@@ -212,6 +212,13 @@ def get_total_word_count(input: str):
     """
     return len(REGEX_WORDS.split(input))
 
+def get_total_syllable_count(input: str):
+    """
+    Get the total number of syllables in the input.
+    """
+    words = REGEX_WORDS.split(input)
+    return sum([count_syllables(word) for word in words])
+
 
 def get_words_with_deltas(input_a: str, input_b: str):
     """
@@ -237,6 +244,7 @@ for speaker in speakers:
     print("===================================================================")
     print("Speaker: " + speaker)
     print("Number of words said: " + str(get_total_word_count(speakers[speaker])))
+    print("Number of syllables said: " + str(get_total_syllable_count(speakers[speaker])))
     most_used_words = get_most_used_words(speakers[speaker])
     print(
         "Most used words: "
