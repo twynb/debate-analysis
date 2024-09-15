@@ -2,6 +2,7 @@
 Speaker: DAVID MUIR
 Number of words said: 2174
 Number of syllables said: 3190
+gzip compression ratio: 0.36823917061801814
 Most used words: PRESIDENT(73 times), VICE(31 times), HARRIS(26 times), WANT(22 times), HERE(21 times), TRUMP(21 times), YOUR(20 times), THANK(18 times), WE(18 times), FROM(16 times), TONIGHT(14 times), UP(14 times), LET(13 times), SAID(13 times), MR(12 times), WHAT(11 times), RESPOND(11 times), DID(11 times), HE(10 times), ABOUT(10 times)
 Most used non-pronoun words: PRESIDENT(73 times), VICE(31 times), HARRIS(26 times), WANT(22 times), HERE(21 times), TRUMP(21 times), THANK(18 times), FROM(16 times), TONIGHT(14 times), UP(14 times), LET(13 times), SAID(13 times), MR(12 times), WHAT(11 times), RESPOND(11 times), DID(11 times), ABOUT(10 times), NO(9 times), THERE(9 times), I'LL(9 times)
 Flesch Reading Ease: 71.77685407864804
@@ -10,6 +11,7 @@ Flesch-Kincaid Grade Level: 5.892923843570578
 Speaker: LINSEY DAVIS
 Number of words said: 949
 Number of syllables said: 1391
+gzip compression ratio: 0.40996376811594204
 Most used words: PRESIDENT(46 times), TRUMP(21 times), VICE(18 times), HARRIS(17 times), YOUR(17 times), SAID(11 times), NOW(10 times), THANK(10 times), WE(9 times), LAST(7 times), GET(6 times), DEBATE(5 times), WANT(5 times), ABORTION(5 times), ISSUE(4 times), BAN(4 times), TIME(4 times), ISRAEL(4 times), PLAN(4 times), RACE(3 times)
 Most used non-pronoun words: PRESIDENT(46 times), TRUMP(21 times), VICE(18 times), HARRIS(17 times), SAID(11 times), NOW(10 times), THANK(10 times), LAST(7 times), GET(6 times), DEBATE(5 times), WANT(5 times), ABORTION(5 times), ISSUE(4 times), BAN(4 times), TIME(4 times), ISRAEL(4 times), PLAN(4 times), RACE(3 times), BIDEN(3 times), AFTER(3 times)
 Flesch Reading Ease: 71.52204153467092
@@ -18,6 +20,7 @@ Flesch-Kincaid Grade Level: 5.9875905764119
 Speaker: VICE PRESIDENT KAMALA HARRIS
 Number of words said: 5931
 Number of syllables said: 8673
+gzip compression ratio: 0.3593897787948131
 Most used words: WE(91 times), WHAT(63 times), PRESIDENT(56 times), WHO(54 times), HE(51 times), PEOPLE(47 times), ABOUT(45 times), OUR(34 times), DONALD(32 times), TRUMP(31 times), AMERICAN(26 times), SAID(25 times), LET'S(24 times), WILL(23 times), STATES(22 times), UP(21 times), ONE(21 times), HIS(21 times), WHEN(21 times), UNITED(21 times)
 Most used non-pronoun words: WHAT(63 times), PRESIDENT(56 times), WHO(54 times), PEOPLE(47 times), ABOUT(45 times), DONALD(32 times), TRUMP(31 times), AMERICAN(26 times), SAID(25 times), LET'S(24 times), WILL(23 times), STATES(22 times), UP(21 times), ONE(21 times), WHEN(21 times), UNITED(21 times), BECAUSE(20 times), KNOW(20 times), PLAN(19 times), UNDERSTAND(19 times)
 Flesch Reading Ease: 66.4111009363339
@@ -26,6 +29,7 @@ Flesch-Kincaid Grade Level: 8.076447883519155
 Speaker: FORMER PRESIDENT DONALD TRUMP
 Number of words said: 8070
 Number of syllables said: 10953
+gzip compression ratio: 0.3460569209072203
 Most used words: THEY(168 times), SHE(91 times), WE(84 times), PEOPLE(80 times), BECAUSE(63 times), GOING(60 times), OUR(56 times), COUNTRY(54 times), HE(53 times), ALL(50 times), THEY'RE(46 times), SAID(46 times), WHAT(44 times), DON'T(43 times), GET(40 times), UP(35 times), HER(35 times), IT'S(35 times), THAT'S(33 times), KNOW(32 times)
 Most used non-pronoun words: PEOPLE(80 times), BECAUSE(63 times), GOING(60 times), COUNTRY(54 times), ALL(50 times), THEY'RE(46 times), SAID(46 times), WHAT(44 times), DON'T(43 times), GET(40 times), UP(35 times), KNOW(32 times), LIKE(32 times), ONE(32 times), IF(32 times), OUT(31 times), GOT(29 times), PRESIDENT(28 times), ABOUT(28 times), NEVER(27 times)
 Flesch Reading Ease: 82.12884838380388

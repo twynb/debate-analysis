@@ -5,6 +5,8 @@ This is a short analysis of a transcript of the presidential debate between Kama
 The analysis includes, for both candidates and both moderators:
 
 - The total number of words and syllables said
+- The ratio in size between the normal text and the text compressed via zlib
+  - This is mostly a joke analysis stolen from [Linus Neumann](https://www.youtube.com/watch?v=ZG4FawUtYPA) - an easily compressed text implies less entropy/varied content inside it ;D
 - The 20 most used words, excluding some uninteresting words
 - The 20 most used words, excluding some uninteresting words and pronouns
   - Note that singular first-person pronouns are already part of the "uninteresting words"
