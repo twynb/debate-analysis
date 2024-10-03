@@ -4,6 +4,8 @@ import zlib
 REGEX_WORDS = re.compile(r"[^a-zA-Z0-9_']+")
 SPEAKER_KEY_TRUMP = "FORMER PRESIDENT DONALD TRUMP"
 SPEAKER_KEY_HARRIS = "VICE PRESIDENT KAMALA HARRIS"
+SPEAKER_KEY_VANCE = "JDV"
+SPEAKER_KEY_WALZ = "TW"
 
 
 def parse_file_to_speakers(file: str):
@@ -25,9 +27,9 @@ def parse_file_to_speakers(file: str):
             else:
                 lines[split[0]] += " " + split[1]
     # cleanup inconsistent names for the same people
-    lines[SPEAKER_KEY_HARRIS] += " " + lines.pop("VICE PRESIDENT HARRIS", "")
-    lines["LINSEY DAVIS"] += " " + lines.pop("LINDSEY DAVIS", "")
-    lines[SPEAKER_KEY_TRUMP] += " " + lines.pop("PRESIDENT TRUMP", "")
+    # lines[SPEAKER_KEY_HARRIS] += " " + lines.pop("VICE PRESIDENT HARRIS", "")
+    # lines["LINSEY DAVIS"] += " " + lines.pop("LINDSEY DAVIS", "")
+    # lines[SPEAKER_KEY_TRUMP] += " " + lines.pop("PRESIDENT TRUMP", "")
     return lines
 
 
@@ -222,6 +224,13 @@ def get_total_syllable_count(input: str):
     return sum([count_syllables(word) for word in words])
 
 
+def get_amount_of_i(input: str):
+    """
+    Count how many times the speaker said "I".
+    """
+    return len([word for word in REGEX_WORDS.split(input) if word.upper() == "I"])
+
+
 def get_words_with_deltas(input_a: str, input_b: str):
     """
     Get the 20 words with the biggest difference between how often they occur in `input_a`
@@ -245,7 +254,8 @@ def get_zip_ratio(input: str):
 
 init_cmu_dict()
 
-speakers = parse_file_to_speakers("debate_transcript.txt")
+# speakers = parse_file_to_speakers("debate_transcript.txt")
+speakers = parse_file_to_speakers("walz_vance_transcript")
 
 for speaker in speakers:
     print("===================================================================")
@@ -254,9 +264,7 @@ for speaker in speakers:
     print(
         "Number of syllables said: " + str(get_total_syllable_count(speakers[speaker]))
     )
-    print(
-        "gzip compression ratio: " + str(get_zip_ratio(speakers[speaker]))
-    )
+    print("gzip compression ratio: " + str(get_zip_ratio(speakers[speaker])))
     most_used_words = get_most_used_words(speakers[speaker])
     print(
         "Most used words: "
@@ -276,6 +284,9 @@ for speaker in speakers:
             ]
         )
     )
+    print(
+        "Amount of times speaker said 'I': " + str(get_amount_of_i(speakers[speaker]))
+    )
     print("Flesch Reading Ease: " + str(flesch_reading_ease(speakers[speaker])))
     print(
         "Flesch-Kincaid Grade Level: "
@@ -285,10 +296,10 @@ for speaker in speakers:
 # everything from here on out will need to be changed for a different transcript!
 print("===================================================================")
 biggest_delta_harris_trump = get_words_with_deltas(
-    speakers[SPEAKER_KEY_HARRIS], speakers[SPEAKER_KEY_TRUMP]
+    speakers[SPEAKER_KEY_WALZ], speakers[SPEAKER_KEY_VANCE]
 )
 print(
-    "Words Harris said more often than Trump: "
+    "Words (DEM CANDIDATE) said more often than (REP CANDIDATE): "
     + ", ".join(
         [
             word[0] + "(" + str(word[1]) + " times more)"
@@ -298,10 +309,10 @@ print(
 )
 
 biggest_delta_trump_harris = get_words_with_deltas(
-    speakers[SPEAKER_KEY_TRUMP], speakers[SPEAKER_KEY_HARRIS]
+    speakers[SPEAKER_KEY_VANCE], speakers[SPEAKER_KEY_WALZ]
 )
 print(
-    "Words Trump said more often than Harris: "
+    "Words (REP CANDIDATE) said more often than (DEM CANDIDATE): "
     + ", ".join(
         [
             word[0] + "(" + str(word[1]) + " times more)"
